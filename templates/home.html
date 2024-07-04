@@ -11,44 +11,52 @@
           width: 100%; /* Make columns full width on smaller screens */
         }
       }
+
     </style>
   </head>
   <body>
     {% include 'nav.html' %}
     <div class="container">
-      <h1 class="text-center mt-2 mb-4">Dzigsam Netout</h1>
-      <p>Hello there, Welcome to Dzigsam Netout.</p><br>
-      <div class='row'><br>
-        <div class='col-6'><br>
-          <img id="Games" src = "https://3f85458a-d88d-42e5-99cd-63138c28a1a0-00-3swt6hvoko8b2.spock.replit.dev/static/games.png" height = "320"
-      width="340">
-          <h2>Dzigsam Games</h2>
-        </div>
-        <div class='col-6'><br>
-          <img id="Youtube" src = "https://3f85458a-d88d-42e5-99cd-63138c28a1a0-00-3swt6hvoko8b2.spock.replit.dev/static/youtube.webp" height ="320"
-      width="340">
-      
-          <h2>Dzigsam Youtube Videos</h2>
-        </div>
-      </div>
-      <h1 class="text-center">Dzigsam Institute Of Technology</h1>
-      <h1 class="text-center mt-2 mb-4">About Dzigsam</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <h2 class="text-center mt-2 mb-4">Vacant Cources</h2>
-       <div>
-         {% for cource in cources %}
-            {% include 'courceitem.html' %}
-         {% endfor %}
-       </div>
-      <div>
-      <button class="btn btn-primary btn-lg mt-4 mb-4">Other Courses</button>
-      </div>
-      <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2024, Dzigsam</p>
-        <p> Developed by Peter Azaglo </p>
-        <p> Powered By Dzigsam </p>
-      
+      <div class="row g-0">
+        <div class="sidebar col3 position-absolute top-5 start-0">
+          {% include 'sidebar.html' %}
+        </div><br>
+          <div class="col-9 main-content position-absolute top-0 end-0">
+            <h1 class="text-center mt-2 mb-4">Dzigsam Netout</h1>
+            <p>Hello there, Welcome to Dzigsam Netout.</p><br>
+            <div class='row'><br>
+              <div class='col-6'><br>
+                <img id="Games" src = "https://3f85458a-d88d-42e5-99cd-63138c28a1a0-00-3swt6hvoko8b2.spock.replit.dev/static/games.png" height = "320"
+            width="340">
+                <h2>Dzigsam Games</h2>
+              </div>
+              <div class='col-6'><br>
+                <img id="Youtube" src = "https://3f85458a-d88d-42e5-99cd-63138c28a1a0-00-3swt6hvoko8b2.spock.replit.dev/static/youtube.webp" height ="320"
+            width="340">
+            
+                <h2>Dzigsam Youtube Videos</h2>
+              </div>
+            </div>
+            <h1 class="text-center">Dzigsam Institute Of Technology</h1>
+            <h1 class="text-center mt-2 mb-4">About Dzigsam</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <h2 class="text-center mt-2 mb-4">Vacant Cources</h2>
+             <div>
+               {% for cource in cources %}
+                  {% include 'courceitem.html' %}
+               {% endfor %}
+             </div>
+            <div>
+            <button class="btn btn-primary btn-lg mt-4 mb-4">Other Courses</button>
+            <hr>
+            </div>
+            <button class="btn btn-primary btn-lg">Contact Us</button>
+              <p class="mt-4">Copyright 2024, Dzigsam</p>
+              <p> Developed by Peter Azaglo </p>
+              <p> Powered By Dzigsam </p>
+            </div>
+          </div>
       </div>
     </div>
   </body>
