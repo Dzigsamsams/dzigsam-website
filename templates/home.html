@@ -16,9 +16,10 @@
   </head>
   <body>
     {% include 'nav.html' %}
+
     <div class="container">
       <div class="row g-0">
-        <div class="sidebar col3 position-absolute top-5 start-0">
+        <div class="sidebar col3 position-absolute top-1 start-0">
           {% include 'sidebar.html' %}
         </div><br>
           <div class="col-9 main-content position-absolute top-0 end-0">
@@ -39,8 +40,15 @@
             </div>
             <h1 class="text-center">Dzigsam Institute Of Technology</h1>
             <h1 class="text-center mt-2 mb-4">About Dzigsam</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <div class="row mb-4">
+              <div class="col-md-6">
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              <div class="d-none d-md-block col-md-6">
+                <img src="/static/ds.jpg" height="320" border-radius="4px">
+              </div>
+            </div>
             <h2 class="text-center mt-2 mb-4">Vacant Cources</h2>
              <div>
                {% for cource in cources %}
@@ -51,10 +59,10 @@
             <button class="btn btn-primary btn-lg mt-4 mb-4">Other Courses</button>
             <hr>
             </div>
-            <button class="btn btn-primary btn-lg">Contact Us</button>
-              <p class="mt-4">Copyright 2024, Dzigsam</p>
+            <a class="btn btn-primary btn-lg" href= "mailto:Christopher?subject=Contact%20Info&body=Question%20about%20Dzigsam%3A%20%3Cany%20question%3E%0D%0A%0D%0AContact%20Info%3A%2000000000000%20%2F%201234567891%0D%0A%0D%0AWhatsapp%20contact%20info%3A%202782772993%20%2F%20889978899878%0D%0A%0D%0AYoutube%20link%3A%20qwertyuiopasdfghjkl%0D%0A%0D%0ATiktok%20link%3A%20asdfghjklzxcvbnm%0D%0A%0D%0AFacebook%20link%3A%20asdfghjklqwertyu%0D%0A%0D%0ATwitter%20link%3A%20qwertyuiopasdfghjkl%0D%0A%0D%0AInstagram%20link%3A%20asdfghjklqwertyu%0D%0A%">Contact Us</a>
               <p> Developed by Peter Azaglo </p>
               <p> Powered By Dzigsam </p>
+              {% include 'footer.html' %}
             </div>
           </div>
       </div>
